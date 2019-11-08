@@ -1,6 +1,5 @@
 .resume-component {
-  min-height: 600px;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 57px;
   position: relative;
 }
@@ -17,6 +16,9 @@
   flex-direction: column;
   height: 400px;
 }
+
+
+
 #intro {
 
 }
@@ -61,14 +63,16 @@
   transform: translate(-50%, -50%);
 }
 
-.profile-pic {
+
+/*.profile-pic {
   position: absolute;
   right: 15%;
   bottom: 0;
   z-index: 1;
   max-height: 90vh;
+  max-width: 50vw;
   opacity: 1 !important;
-}
+}*/
 .text-intro {
   position: relative;
   z-index: 2;
@@ -80,16 +84,24 @@
     bottom: 0;
     z-index: 1;
     max-height: 90vh;
+    max-width: 50vw;
+    opacity: 1 !important;
+  }
+  .intro-card {
+    margin-left: 0;
+    width: 50%;
   }
 }
 @media only screen and (max-width: 1024px) {
   .profile-pic {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+    position: relative;
     z-index: 1;
-    max-height: 90vh;
-    opacity: .5;
+    max-height: 70vh;
+    max-width: 50vw;
+    opacity: 1 !important;
+    margin-top: 40vh;
+  }
+  .text-sm {
+    font-size: 5vw !important;
   }
 }
