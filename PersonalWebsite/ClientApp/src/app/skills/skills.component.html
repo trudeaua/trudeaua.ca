@@ -9,6 +9,10 @@
           <a href="{{skill.link}}" target="_blank"><img src="{{skill.imageUrl}}" alt="" class="skill-icon"></a>
         </div>
         <div class="lead text-nowrap">{{skill.name}}</div>
+        <div class="star-ratings-css">
+          <div class="star-ratings-css-top" [ngStyle]="{'width': skill.strength}"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        </div>
       </div>
     </div>
   </div>

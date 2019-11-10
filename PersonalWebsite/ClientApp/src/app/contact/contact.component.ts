@@ -1,3 +1,4 @@
+import { NgForm } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,6 +11,10 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public process(form: NgForm) {
+    console.log(form.value);
   }
 
 }

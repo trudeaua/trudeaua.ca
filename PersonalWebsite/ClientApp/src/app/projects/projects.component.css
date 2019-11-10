@@ -6,48 +6,6 @@
   background-repeat: no-repeat;
 }
 
-.project {
-}
-
-.project-title {
-}
-
 .actions {
     margin: 20px auto;
-}
-
-.project-description {
-    list-style-type: none;
-    border-left: 1px solid lightgray;
-    padding-left: 20px;
-}
-
-@media only screen and (min-width: 992px) {
-    .align {
-        margin: auto 0;    
-    }
-    .thumbnail {
-        width: 100%;
-        padding: 30px;
-    }
-    .align-fix {
-        max-width: 100% !important;  
-        margin: auto 0;
-    }
-} 
-
-@media only screen and (max-width: 991px) {
-    .block-sm {
-        display: block !important;
-    }
-    .align {
-        margin: 0 auto;    
-    }
-    .align-fix {
-        max-width: 100% !important;  
-        margin: auto 0;
-    }
-    .thumbnail {
-        width: 100%;
-    }
 }
