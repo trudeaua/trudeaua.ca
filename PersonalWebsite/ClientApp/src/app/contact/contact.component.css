@@ -1,0 +1,11 @@
+#contact {
+  background: url(../../assets/images/peggy.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#contact-form {
+  
+}

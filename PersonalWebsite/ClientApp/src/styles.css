@@ -10,16 +10,38 @@ code {
   color: #e01a76;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
 html {
   scroll-behaviour: 'smooth';
 }
 
-html, body {
+html, body, .main {
   height: 100%;
+}
+
+.resume-component {
+  min-height: 100vh;
+  padding-top: 77px;
+  padding-bottom: 57px;  
+  position: relative;
+}
+
+.display-5 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-6 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.section-head > h1 > span {
+  color: white; 
+  letter-spacing: -1px;  
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0px 30px 5px 30px; 
+  border-radius: 2px
 }

@@ -1,0 +1,15 @@
+<section class="resume-component position-relative bg-light" id="skills">
+  <div class="text-center section-head mb-3">
+    <h1 class="display-4"><span>Skills</span></h1>
+  </div>
+  <div class="container">
+    <div class="grid-container grid-container--fill">
+      <div class="grid-element text-center" *ngFor="let skill of skills">
+        <div class="icon-container">
+          <a href="{{skill.link}}" target="_blank"><img src="{{skill.imageUrl}}" alt="" class="skill-icon"></a>
+        </div>
+        <div class="lead text-nowrap">{{skill.name}}</div>
+      </div>
+    </div>
+  </div>
+</section>

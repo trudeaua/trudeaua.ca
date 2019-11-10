@@ -1,0 +1,44 @@
+#skills {
+  background: url(../../assets/images/circuits.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.skill-icon {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.icon-container {
+  height: 75%;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.grid-container--fill {
+    grid-template-columns: repeat(auto-fit, 170px);
+}
+
+@media only screen and (min-width: 992px) {
+ .grid-element {
+    padding: 20px;
+    margin: 20px;
+    color: #fff;
+    width: 170px;
+    height: 200px;
+    margin: 0 auto;
+  }
+} 
+
+@media only screen and (max-width: 991px) {
+    .grid-element {
+      color: #fff;
+      width: 120px;
+      height: 150px;
+      margin: 0 auto;
+    }
+}
