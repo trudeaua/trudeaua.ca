@@ -85,8 +85,61 @@ html, body, .main {
 }
 
 
-.item {
+.item-left {
+  padding-top: .25rem !important;
+  padding-right: 1.5rem !important;
+  padding-bottom: .25rem !important;
+  padding-left: 10vw;
+  border-top-right-radius: .25rem!important;
+  border-bottom-right-radius: .25rem!important;
+  margin-left: 0 !important;
+  margin-top: 1.5rem !important;
+}
+
+.item-right {
+  padding-top: .25rem !important;
+  padding-left: 1.5rem !important;
+  padding-bottom: .25rem !important;
+  padding-right: 10vw;
+  border-top-left-radius: .25rem!important;
+  border-bottom-left-radius: .25rem!important;
+  margin-right: 0 !important;
+  margin-top: 1.5rem !important;
 }
 
 .item-title {
+}
+
+.animate-left {
+  position: relative;
+  animation: slideInLeft .7s
+}
+
+@keyframes slideInLeft {
+  from {
+      left: -300px;
+      opacity: 0.5
+  }
+
+  to {
+      left: 0;
+      opacity: 1
+  }
+}
+
+.animate-right {
+  position: relative;
+  animation: slideInRight .7s
+}
+
+@keyframes slideInRight {
+  from {
+      right: -300px;
+      opacity: 0
+  }
+
+  to {
+      right: 0;
+      opacity: 1
+  }
 }
