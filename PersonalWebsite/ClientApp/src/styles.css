@@ -11,11 +11,16 @@ code {
 }
 
 html {
-  scroll-behaviour: 'smooth';
+  /*scroll-behaviour: 'smooth';*/
+  overflow-x: hidden;
 }
 
 html, body, .main {
   height: 100%;
+}
+
+.wrapper {
+  z-index: 200;
 }
 
 .resume-component {
@@ -107,9 +112,6 @@ html, body, .main {
   margin-top: 1.5rem !important;
 }
 
-.item-title {
-}
-
 .animate-left {
   position: relative;
   animation: slideInLeft .7s
@@ -117,8 +119,8 @@ html, body, .main {
 
 @keyframes slideInLeft {
   from {
-      left: -300px;
-      opacity: 0.5
+      left: -0;
+      opacity: 0
   }
 
   to {
@@ -134,7 +136,7 @@ html, body, .main {
 
 @keyframes slideInRight {
   from {
-      right: -300px;
+      right: -0;
       opacity: 0
   }
 

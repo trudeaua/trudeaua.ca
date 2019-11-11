@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EducationComponent } from './education/education.component';
     AboutComponent,
     ProjectsComponent,
     ExperienceComponent,
-    EducationComponent
+    EducationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -30,6 +32,7 @@ import { EducationComponent } from './education/education.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: AppComponent, pathMatch: 'full' },
+      { path: '**', redirectTo: ''}
     ])
   ],
   providers: [],

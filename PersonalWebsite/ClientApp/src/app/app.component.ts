@@ -29,18 +29,22 @@ export class AppComponent implements OnInit {
     function checkAnimationLeft() {
       $('.item-left').each((index, element) => {
         // If the animation has already been started
-
-        if (isElementInViewport(element) && !$(element).hasClass("animation-done")) {
-          // Start the animation
-          $(element).addClass('animate-left');
-          $(element).addClass('animation-done');
-        }
-        else if (!isElementInViewport(element) && $(element).hasClass("animation-done")) {
-          if ($(element).hasClass('animate-left')) {
-            $(element).removeClass('animate-left');
+        var isInView = isElementInViewport(element);
+        if (!isInView) {
+          if ($(element).hasClass("animation-done")) {
+            if ($(element).hasClass('animate-left')) {
+              $(element).removeClass('animate-left');
+            }
+            $(element).removeClass("animation-done");
+            return;
           }
-          $(element).removeClass("animation-done")
-          return;
+        }
+        else if (isInView) {
+          if (!$(element).hasClass("animation-done")) {
+            // Start the animation
+            $(element).addClass('animate-left');
+            $(element).addClass('animation-done');
+          }
         }
       });
     }
@@ -48,20 +52,22 @@ export class AppComponent implements OnInit {
     // Check if it's time to start the animation.
     function checkAnimationRight() {
       $('.item-right').each((index, element) => {
-
-        // If the animation has already been started
-
-        if (isElementInViewport(element) && !$(element).hasClass("animation-done")) {
-          // Start the animation
-          $(element).addClass('animate-right');
-          $(element).addClass('animation-done');
-        }
-        else if (!isElementInViewport(element) && $(element).hasClass("animation-done")) {
-          if ($(element).hasClass('animate-right')) {
-            $(element).removeClass('animate-right');
+        var isInView = isElementInViewport(element);
+        if (!isInView) {
+          if ($(element).hasClass("animation-done")) {
+            if ($(element).hasClass('animate-right')) {
+              $(element).removeClass('animate-right');
+            }
+            $(element).removeClass("animation-done");
+            return;
           }
-          $(element).removeClass("animation-done")
-          return;
+        }
+        else if (isInView) {
+          if (!$(element).hasClass("animation-done")) {
+            // Start the animation
+            $(element).addClass('animate-right');
+            $(element).addClass('animation-done');
+          }
         }
       });
     }

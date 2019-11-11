@@ -7,19 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
   public skills: {'strength': string, 'imageUrl': string, 'name': string, 'link': string}[] = [
-  {'strength': '100%', 'name': 'Angular 8', 'link': 'https://angular.io/', 'imageUrl': 'https://miro.medium.com/max/500/1*nbJ41jD1-r2Oe6FsLjKaOg.png'},
-  {'strength': '70%', 'name': 'Blender', 'link': 'https://www.blender.org/', 'imageUrl': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/1252px-Blender_logo_no_text.svg.png'},
-  {'strength': '75%', 'name': 'C#', 'link': 'https://docs.microsoft.com/en-us/dotnet/csharp/', 'imageUrl': 'https://seeklogo.com/images/C/csharp-logo-58C6C6F67A-seeklogo.com.png'},
-  {'strength': '90%', 'name': 'CSS3', 'link': 'https://developer.mozilla.org/en-US/docs/Archive/CSS3', 'imageUrl': 'https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg'},
-  {'strength': '90%', 'name': 'Firebase', 'link': 'https://firebase.google.com/?gclid=CjwKCAiA5JnuBRA-EiwA-0ggPU0kfi2pqpTXcVjOMp3cYCWYXSY9VmUvC3ZLiFi2xdqVQ4h03AIABBoCFecQAvD_BwE', 'imageUrl': 'https://cdn.iconscout.com/icon/free/png-512/firebase-1-282796.png'},
-  {'strength': '90%', 'name': 'Git', 'link': 'https://git-scm.com/', 'imageUrl': 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png'},
-  {'strength': '100%', 'name': 'HTML5', 'link': 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5', 'imageUrl': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png'},
-  {'strength': '85%', 'name': 'Java', 'link': 'https://www.java.com/en/', 'imageUrl': 'https://www.stickpng.com/assets/images/58480979cef1014c0b5e4901.png'},
-  {'strength': '85%', 'name': 'JavaScript', 'link': 'https://www.javascript.com/', 'imageUrl': 'https://www.probytes.net/wp-content/uploads/2018/07/javascript-logo-E967E87D74-seeklogo.com_.png'},
-  {'strength': '75%', 'name': 'MySQL', 'link': 'https://www.mysql.com/', 'imageUrl': 'http://pngimg.com/uploads/mysql/mysql_PNG22.png'},
-  {'strength': '60%', 'name': '.NET Core', 'link': 'https://dotnet.microsoft.com/', 'imageUrl': 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1200px-.NET_Core_Logo.svg.png'},
-  {'strength': '100%', 'name': 'Python', 'link': 'https://www.python.org/', 'imageUrl': 'http://www.iconarchive.com/download/i73027/cornmanthe3rd/plex/Other-python.ico'},
-  {'strength': '80%', 'name': 'Unity', 'link': 'https://unity.com/', 'imageUrl': 'https://i.pinimg.com/originals/47/b1/81/47b1815866ebf696b1535a00b6fdf83c.png'}
+  {'strength': '100%', 'name': 'Angular 8', 'link': 'https://angular.io/', 'imageUrl': '../../assets/images/skill-icons/angular.png'},
+  {'strength': '70%', 'name': 'Blender', 'link': 'https://www.blender.org/', 'imageUrl': '../../assets/images/skill-icons/blender.png'},
+  {'strength': '75%', 'name': 'C#', 'link': 'https://docs.microsoft.com/en-us/dotnet/csharp/', 'imageUrl': '../../assets/images/skill-icons/csharp.png'},
+  {'strength': '90%', 'name': 'CSS3', 'link': 'https://developer.mozilla.org/en-US/docs/Archive/CSS3', 'imageUrl': '../../assets/images/skill-icons/css.svg'},
+  {'strength': '90%', 'name': 'Firebase', 'link': 'https://firebase.google.com/?gclid=CjwKCAiA5JnuBRA-EiwA-0ggPU0kfi2pqpTXcVjOMp3cYCWYXSY9VmUvC3ZLiFi2xdqVQ4h03AIABBoCFecQAvD_BwE', 'imageUrl': '../../assets/images/skill-icons/firebase.png'},
+  {'strength': '90%', 'name': 'Git', 'link': 'https://git-scm.com/', 'imageUrl': '../../assets/images/skill-icons/git.png'},
+  {'strength': '100%', 'name': 'HTML5', 'link': 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5', 'imageUrl': '../../assets/images/skill-icons/html.png'},
+  {'strength': '80%', 'name': 'Ionic 2', 'link': 'https://ionicframework.com/docs', 'imageUrl': '../../assets/images/skill-icons/ionic2.png'},
+  {'strength': '85%', 'name': 'Java', 'link': 'https://www.java.com/en/', 'imageUrl': '../../assets/images/skill-icons/java.png'},
+  {'strength': '85%', 'name': 'JavaScript', 'link': 'https://www.javascript.com/', 'imageUrl': '../../assets/images/skill-icons/javascript.png'},
+  {'strength': '75%', 'name': 'MySQL', 'link': 'https://www.mysql.com/', 'imageUrl': '../../assets/images/skill-icons/mysql.png'},
+  {'strength': '60%', 'name': '.NET Core', 'link': 'https://dotnet.microsoft.com/', 'imageUrl': '../../assets/images/skill-icons/dotnet.png'},
+  {'strength': '100%', 'name': 'Python', 'link': 'https://www.python.org/', 'imageUrl': '../../assets/images/skill-icons/python.ico'},
+  {'strength': '80%', 'name': 'Unity', 'link': 'https://unity.com/', 'imageUrl': '../../assets/images/skill-icons/unity.png'}
 ];
   constructor() { }
 
